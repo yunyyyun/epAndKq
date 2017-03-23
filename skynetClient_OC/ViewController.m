@@ -27,7 +27,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    startWildPointerCheck();
     _socketState = 0;
     //_bufData = [NSString stringWithUTF8String:"1234567890987654323213121"];
     //NSLog(@"%@",_bufData);

@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5112E7261E7986B300F7225C /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 5112E7201E7986B300F7225C /* fishhook.c */; };
-		5112E7271E7986B300F7225C /* WildPointerChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112E7231E7986B300F7225C /* WildPointerChecker.m */; };
-		5112E7281E7986B300F7225C /* WPCZombieObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112E7251E7986B300F7225C /* WPCZombieObject.m */; };
 		51A031E81E6481B50004BA52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A031E71E6481B50004BA52 /* main.m */; };
 		51A031EB1E6481B50004BA52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A031EA1E6481B50004BA52 /* AppDelegate.m */; };
 		51A031EE1E6481B50004BA52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A031ED1E6481B50004BA52 /* ViewController.m */; };
@@ -21,12 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5112E7201E7986B300F7225C /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
-		5112E7211E7986B300F7225C /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
-		5112E7221E7986B300F7225C /* WildPointerChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WildPointerChecker.h; sourceTree = "<group>"; };
-		5112E7231E7986B300F7225C /* WildPointerChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WildPointerChecker.m; sourceTree = "<group>"; };
-		5112E7241E7986B300F7225C /* WPCZombieObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPCZombieObject.h; sourceTree = "<group>"; };
-		5112E7251E7986B300F7225C /* WPCZombieObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPCZombieObject.m; sourceTree = "<group>"; };
 		51A031E31E6481B50004BA52 /* skynetClient_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skynetClient_OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A031E71E6481B50004BA52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		51A031E91E6481B50004BA52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,19 +47,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5112E71F1E7986B300F7225C /* WildPointerChecker */ = {
-			isa = PBXGroup;
-			children = (
-				5112E7201E7986B300F7225C /* fishhook.c */,
-				5112E7211E7986B300F7225C /* fishhook.h */,
-				5112E7221E7986B300F7225C /* WildPointerChecker.h */,
-				5112E7231E7986B300F7225C /* WildPointerChecker.m */,
-				5112E7241E7986B300F7225C /* WPCZombieObject.h */,
-				5112E7251E7986B300F7225C /* WPCZombieObject.m */,
-			);
-			path = WildPointerChecker;
-			sourceTree = SOURCE_ROOT;
-		};
 		51A031DA1E6481B50004BA52 = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +66,6 @@
 		51A031E51E6481B50004BA52 /* skynetClient_OC */ = {
 			isa = PBXGroup;
 			children = (
-				5112E71F1E7986B300F7225C /* WildPointerChecker */,
 				51A032001E6483A90004BA52 /* socket-server-master */,
 				51A031E91E6481B50004BA52 /* AppDelegate.h */,
 				51A031EA1E6481B50004BA52 /* AppDelegate.m */,
@@ -197,11 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				51A031EE1E6481B50004BA52 /* ViewController.m in Sources */,
-				5112E7261E7986B300F7225C /* fishhook.c in Sources */,
 				51A031EB1E6481B50004BA52 /* AppDelegate.m in Sources */,
 				51A032091E6483A90004BA52 /* socket_server.c in Sources */,
-				5112E7271E7986B300F7225C /* WildPointerChecker.m in Sources */,
-				5112E7281E7986B300F7225C /* WPCZombieObject.m in Sources */,
 				51A031F41E6481B50004BA52 /* skynetClient_OC.xcdatamodeld in Sources */,
 				51A031E81E6481B50004BA52 /* main.m in Sources */,
 			);
