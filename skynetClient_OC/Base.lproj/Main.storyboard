@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYC-Xe-HwE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="fjh-Sn-uGW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHF-EF-s2u">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3Yt-hP-4Me"/>
+                                </constraints>
+                                <state key="normal" title="init"/>
+                                <connections>
+                                    <action selector="socketInit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Tf-q4-iXh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EXN-33-PKp">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oyk-wr-f8h"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTi-bu-hHD">
+                                <state key="normal" title="send"/>
+                                <connections>
+                                    <action selector="socketSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="InA-eR-Mbe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnf-gj-xuk">
+                                <color key="backgroundColor" red="0.88488320539242926" green="1" blue="0.88311610574252031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pXF-Ec-XOv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nTi-bu-hHD" firstAttribute="width" secondItem="fHF-EF-s2u" secondAttribute="width" id="475-Yk-VEj"/>
+                            <constraint firstItem="nTi-bu-hHD" firstAttribute="top" secondItem="EXN-33-PKp" secondAttribute="bottom" constant="10" id="94J-NW-zT1"/>
+                            <constraint firstItem="nTi-bu-hHD" firstAttribute="leading" secondItem="fHF-EF-s2u" secondAttribute="trailing" constant="20" id="J9p-Lo-vcl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EXN-33-PKp" secondAttribute="trailing" constant="10" id="Kcd-8x-Dja"/>
+                            <constraint firstItem="EXN-33-PKp" firstAttribute="top" secondItem="yYC-Xe-HwE" secondAttribute="bottom" constant="10" id="Ott-Vc-xJY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nTi-bu-hHD" secondAttribute="trailing" constant="10" id="Pap-OZ-ZuP"/>
+                            <constraint firstItem="yYC-Xe-HwE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Y2d-Qa-Vdi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yYC-Xe-HwE" secondAttribute="trailing" constant="20" id="Yy6-Ka-CIn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vnf-gj-xuk" secondAttribute="trailing" constant="10" id="fT8-pT-Eko"/>
+                            <constraint firstItem="yYC-Xe-HwE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="j0B-fX-GDy"/>
+                            <constraint firstItem="fHF-EF-s2u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="lHc-aI-aWA"/>
+                            <constraint firstItem="vnf-gj-xuk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="mmQ-BC-p7g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vnf-gj-xuk" secondAttribute="bottom" constant="377" id="rI2-bt-Nrn"/>
+                            <constraint firstItem="EXN-33-PKp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="tcz-vV-KWq"/>
+                            <constraint firstItem="nTi-bu-hHD" firstAttribute="height" secondItem="fHF-EF-s2u" secondAttribute="height" id="ucs-lU-0DX"/>
+                            <constraint firstItem="fHF-EF-s2u" firstAttribute="top" secondItem="EXN-33-PKp" secondAttribute="bottom" constant="10" id="xRE-3C-XoD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="content" destination="EXN-33-PKp" id="eQp-95-0LF"/>
+                        <outlet property="reciveContext" destination="vnf-gj-xuk" id="CMT-hA-LfE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="111.99400299850076"/>
+        </scene>
+    </scenes>
+</document>
